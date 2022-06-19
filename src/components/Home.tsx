@@ -66,6 +66,24 @@ const Aboutme = () => {
 }
 
 const Home = () => {
+    const colorList = ["palevioletred", "aquamarine", "darkslategrey", "dodgerblue", "forestgreen", "black", "tomato"]
+    setInterval(() => {
+        const screen = document.querySelector("section")
+        const maxLine = Math.floor(screen.offsetHeight / 17) + 5
+        const length = Math.floor(Math.random() * 60) + 7
+        const color = colorList[Math.floor(Math.random() * colorList.length)]
+        const line = document.createElement("div")
+        const lineRoot = document.createElement("div")
+        line.style.background = color
+        lineRoot.append(line)
+        screen.append(lineRoot)
+        setTimeout(() => {
+            line.style.width = `${length}%`
+            setTimeout(() => {screen.scrollTo(0, screen.offsetHeight)}, 500)
+        }, 500)
+        maxLine < screen.childElementCount ? screen.removeChild(screen.firstChild) : null
+    }, 1000)
+
     return (
         <div className={classNames(globalStyles.main, homeStyles.root)}>
             <div className={homeStyles.welcome}>
@@ -77,8 +95,6 @@ const Home = () => {
                 <motion.div transition={{ duration: 1, delay: 0.65, type: "spring" }} animate={{ opacity: 1 }} className={homeStyles.computer}>
                     <div>
                         <section className={homeStyles.screen}>
-                            <div></div>
-                            <div></div>
                         </section>
                     </div>
                 </motion.div>
