@@ -1,0 +1,27 @@
+.main {
+    width: 100vw;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+
+    * {
+        opacity: 0.1;
+        color: grey;
+        font-size: 150px;
+        position: absolute;
+        margin: 0;
+        user-select: none;
+    }
+}
+
+.t1 {
+    top: 50px;
+    left: 100px;
+    transform: rotate(25deg);
+}
+
+.t2 {
+    top: 500px;
+    right: 50px;
+    transform: rotate(-25deg);
+}

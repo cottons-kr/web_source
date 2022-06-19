@@ -1,0 +1,29 @@
+.main {
+    width: 100vw;
+    height: 100px;
+    padding-top: 100px;
+    background-color: aliceblue;
+}
+
+.footer {
+    width: calc(100% - 200px);
+    height: 60px;
+    padding: 20px 100px;
+    background-color: rgb(231, 240, 248);
+
+    p {
+        color: gray;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    a {
+        text-decoration: underline;
+        color: gray;
+        transition: color 0.5s;
+
+        &:hover {
+            color: black;
+        }
+    }
+}

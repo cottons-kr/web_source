@@ -1,0 +1,12 @@
+$padding-break-point: 1500px; 
+
+.main {
+    width: 70vw;
+    padding: 200px 15vw;
+    background-color: aliceblue;
+
+    @media (max-width: $padding-break-point) {
+        width: 80vw;
+        padding: 200px 10vw;
+    }
+}

@@ -1,0 +1,40 @@
+$mobile-point: 750px;
+
+.main {
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 9999;
+    background-color: aliceblue;
+}
+
+.bottomLine {
+    width: 0%;
+    height: 3px;
+    background-color: #b4e4ff;
+    transition-duration: 0.2s;
+    z-index: 999;
+}
+
+.bottomLineActive {
+    width: 100%;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 45px;
+
+    a {
+        padding-top: 15px;
+        color: black;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+    @media (max-width: $mobile-point) {
+        width: 80vw;
+    }
+}
