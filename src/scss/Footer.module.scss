@@ -1,0 +1,13 @@
+.main {
+    width: calc(100vw - 630px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 18px 315px;
+
+    background-color: rgba($color: #000000, $alpha: 0.05);
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

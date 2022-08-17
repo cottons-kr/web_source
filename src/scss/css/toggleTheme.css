@@ -1,0 +1,18 @@
+.light {
+    background-color: var(--bg-color-light-mode);
+}
+
+.light *:not(.no-theme):not(.no-theme>*) {
+    color: var(--font-color-light-mode);
+}
+
+/***************************/
+
+.dark {
+    background-color: var(--bg-color-dark-mode);
+}
+
+.dark *:not(.no-theme):not(.no-theme>*) {
+    color: var(--font-color-dark-mode);
+}
+

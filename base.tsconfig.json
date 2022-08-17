@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": true,
+		"lib": [ "DOM", "ES2022" ],
+		"target": "ES6",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"noResolve": false,
+		"paths": {
+			"#scss/*": [ "./src/scss/*" ],
+			"#util/*": [ "./src/util/*" ]
+		},
+		"removeComments": false,
+		"sourceMap": true,
+		"strict": true,
+		"jsx": "react-jsx"
+	},
+	"exclude": [ "node_modules" ]
+}

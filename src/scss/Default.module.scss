@@ -1,0 +1,12 @@
+$break-point: 1600px;
+
+.root {
+    width: calc(100vw - 576px);
+    padding: 150px 288px;
+
+    @media screen and (max-width: $break-point) {
+        width: calc(100vw - 288px);
+        padding: 150px 144px;
+    }
+}
+

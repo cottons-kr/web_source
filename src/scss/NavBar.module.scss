@@ -1,0 +1,66 @@
+.main {
+    width: calc(100vw - 300px);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 18px 150px;
+    align-items: center;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+}
+
+.link {
+    margin: 0 50px;
+
+    img {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.iconDarkMode {
+    filter: invert(100%);
+}
+
+.effect {
+    width: 0%;
+    height: 3px;
+    margin-top: 3px;
+    transition: width 0.2s;
+}
+
+.effectLight {
+    background-color: var(--effect-color-light-mode);
+}
+
+.effectDark {
+    background-color: var(--effect-color-dark-mode);
+    height: 2px;
+}
+
+.effectActive {
+    width: 100%;
+}
+
+.switch {
+    position: absolute;
+    right: 150px;
+    user-select: none;
+    cursor: pointer;
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
+
+    img[src='/asset/sun.svg'] {
+        filter: invert(100%);
+    }
+}

@@ -1,0 +1,42 @@
+.welcomeTitle {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 390px;
+    
+    h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.welcomeTitleLightMode {
+    h1 {
+        color: #85d1fd;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+.pleaseScrollDown {
+    height: 200px;
+    padding: 50px;
+    color: gray;
+
+    p::before {
+        content: '▼';
+        margin-right: 5px;
+    }
+}
+
+.iconElementContainer {
+    position: absolute;
+    right: 300px;
+}
